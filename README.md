@@ -506,59 +506,50 @@ int main() {
 
 ## 16. Daily Task Roadmap & Checklist
 
+Track your daily learning and GitHub submissions here:
+
 | Day | Topic | Key Concepts | Status |
 | :---: | :--- | :--- | :---: |
-| **Day 01** | C++ Basics & I/O | Data types, streams, syntax, variables | [x] Completed |
-| **Day 02** | Control Flow & Logic | Conditionals, switch, while, for loops | [x] Completed |
-| **Day 03** | Functions & Modularity | Pass-by-ref, overloading, recursion | [x] Completed |
-| **Day 04** | Pointers & Memory | Addresses, dereferencing, heap allocation | [x] Completed |
-| **Day 05** | OOP Foundations | Classes, encapsulation, constructors | [x] Completed |
-| **Day 06** | Inheritance & Polymorphism | Virtual functions, abstract classes, VTable | [x] Completed |
-| **Day 07** | Templates & STL | Generic algorithms, vectors, maps, iterators | [x] Completed |
-| **Day 08** | Smart Pointers & RAII | `unique_ptr`, `shared_ptr`, memory safety | [x] Completed |
-| **Day 09** | Operator Overloading | Complex numbers, matrix algebra operators | [ ] In Progress |
-| **Day 10** | Advanced File I/O | Binary serialization, persistent student manager| [ ] Planned |
-| **Day 11** | Move Semantics & Rvalues | Rvalue refs (`&&`), move constructors, RAII | [ ] Planned |
-| **Day 12** | Multithreading Basics | `std::thread`, `std::mutex`, `std::lock_guard` | [ ] Planned |
+| **Day 01** | C++ Basics & I/O | Data types, streams, syntax, variables | [ ] Pending |
+| **Day 02** | Control Flow & Logic | Conditionals, switch, while, for loops | [ ] Pending |
+| **Day 03** | Functions & Modularity | Pass-by-ref, overloading, recursion | [ ] Pending |
+| **Day 04** | Pointers & Memory | Addresses, dereferencing, heap allocation | [ ] Pending |
+| **Day 05** | OOP Foundations | Classes, encapsulation, constructors | [ ] Pending |
+| **Day 06** | Inheritance & Polymorphism | Virtual functions, abstract classes, VTable | [ ] Pending |
+| **Day 07** | Templates & STL | Generic algorithms, vectors, maps, iterators | [ ] Pending |
+| **Day 08** | Smart Pointers & RAII | `unique_ptr`, `shared_ptr`, memory safety | [ ] Pending |
+| **Day 09** | Operator Overloading | Custom math types, stream operators `<<` / `>>` | [ ] Pending |
+| **Day 10** | File I/O & Streams | Text & binary file streams, serialization | [ ] Pending |
+| **Day 11** | Exception Handling | Robust validation, custom exceptions | [ ] Pending |
+| **Day 12** | Move Semantics & Rvalues | Rvalue refs (`&&`), move constructors, RAII | [ ] Pending |
 
 ---
 
 ## 17. Daily GitHub Submission Workflow
 
-Use this simple, standardized workflow each day to code, test, and push your daily progress to GitHub.
+Follow this step-by-step workflow every day to submit your daily task to GitHub:
 
-### Quick Verification & Build
-Compile and test all completed tasks in one command:
+### Step 1: Compile & Test Your Code
+Compile your daily C++ code using `g++` or `clang++`:
 ```bash
-make run-all
+clang++ -std=c++17 -Wall -Wextra main.cpp -o main
+./main
 ```
 
-### Submitting a Daily Task to GitHub
-We provide an automated submission helper script `daily_commit.sh`:
-
+### Step 2: Check Git Status
+Check the files you modified or created:
 ```bash
-# Example for submitting Day 01
-./daily_commit.sh "Day 01: Completed C++ Basics and I/O tasks"
-
-# Example for submitting Day 02
-./daily_commit.sh "Day 02: Completed Control Flow exercises"
-```
-
-### Manual Git Steps (Alternative)
-If you prefer running Git commands manually:
-```bash
-# 1. Check changed files
 git status
+```
 
-# 2. Stage all your daily code and notes
+### Step 3: Stage, Commit & Push to GitHub
+Submit your daily task directly to GitHub:
+```bash
 git add .
-
-# 3. Create your daily commit
-git commit -m "Day XX: <Description of what you learned and implemented>"
-
-# 4. Push to GitHub main branch
+git commit -m "Day 01: Completed C++ Basics and I/O tasks"
 git push origin main
 ```
 
 ---
 *Happy Coding & C++ Mastery!*
+
